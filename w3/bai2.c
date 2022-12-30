@@ -1,13 +1,12 @@
 #include <stdio.h>
 
 int main() {
-    float x, y, min;
-    scanf("%f", &x);
-    scan("%f", &y);
-    if (x < y)
-        min = x;
-    else
-        min = y;
-    printf("%6.2f", min);
+    float a, b, max;
+    scanf("%f", &a);
+    scanf("%f", &b);
+    max = a;
+    if (max < b)
+        max = b;
+    printf("%6.2f", max);
     return 0;
 }
