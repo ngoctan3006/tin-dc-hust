@@ -12,7 +12,7 @@ int main() {
         }
     }
     if (n < 2 || !flag) {
-        printf("Khong la so nguyen to\n");
+        printf("Khong phai la so nguyen to\n");
     } else {
         printf("La so nguyen to\n");
     }

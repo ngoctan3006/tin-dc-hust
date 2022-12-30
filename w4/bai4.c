@@ -2,12 +2,11 @@
 
 int main() {
     int a, b, m;
-    do {
-        scanf("%d", &a);
-    } while (a <= 0);
-    do {
-        scanf("%d", &b);
-    } while (b <= 0);
+    scanf("%d%d", &a, &b);
+    if (a < 1 || b < 1) {
+        printf("ERROR.\n");
+        return 0;
+    }
 
     m = a * b;
     while (a != b) {
