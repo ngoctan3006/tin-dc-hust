@@ -1,11 +1,10 @@
+#include <math.h>
 #include <stdio.h>
 
 int main() {
-    float r;
-    scanf("%f", &r);
-    float PI = 3.14159;
-    float M = 2 * PI * r;
-    float S = PI * r * r;
-    printf("%f\n%f\n", M, S);
+    float x, y, z, f;
+    scanf("%f%f%f", &x, &y, &z);
+    f = ((x + y + z) / (x * x + y * y + 1)) - fabs(x - z * cos(y));
+    printf("%f\n", f);
     return 0;
 }

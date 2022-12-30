@@ -1,9 +1,11 @@
 #include <stdio.h>
 
 int main() {
-    int n;
-    scanf("%d", &n);
-    int s = (n + 1) * n / 2;
-    printf("%d\n", s);
+    float x, y;
+    scanf("%f%f", &x, &y);
+    float A = x * x + y * y;
+    float B = (x + y) * (x + y);
+    float C = (x - y) * (x - y);
+    printf("%f\n%f\n%f\n", A, B, C);
     return 0;
 }

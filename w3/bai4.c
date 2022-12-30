@@ -1,10 +1,13 @@
-#include <math.h>
 #include <stdio.h>
 
 int main() {
-    float x, y, z, f;
-    scanf("%f%f%f", &x, &y, &z);
-    f = ((x + y + z) / (x * x + y * y + 1)) - fabs(x - z * cos(y));
-    printf("%f\n", f);
+    float x, y, max;
+    scanf("%f", &x);
+    scanf("%f", &y);
+    if (x > y)
+        max = x;
+    else
+        max = y;
+    printf("%6.2f", max);
     return 0;
 }

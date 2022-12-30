@@ -1,11 +1,10 @@
 #include <stdio.h>
 
 int main() {
-    float x, y;
-    scanf("%f%f", &x, &y);
-    float A = x * x + y * y;
-    float B = (x + y) * (x + y);
-    float C = (x - y) * (x - y);
-    printf("%f\n%f\n%f\n", A, B, C);
+    float x, y, z;
+    scanf("%f%f%f", &x, &y, &z);
+    float sum = x + y + z;
+    float aver = sum / 3;
+    printf("%f\n%f\n", sum, aver);
     return 0;
 }
