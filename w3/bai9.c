@@ -1,11 +1,13 @@
+#include <math.h>
 #include <stdio.h>
 
 int main() {
-    float x, y;
+    float x, y, f = 0;
+    int i, j;
     scanf("%f%f", &x, &y);
-    float A = x * x + y * y;
-    float B = (x + y) * (x + y);
-    float C = (x - y) * (x - y);
-    printf("%f\n%f\n%f\n", A, B, C);
+    for (i = 0; i <= 6; i++) {
+        f += pow(x, i) * pow(y, 6 - i);
+    }
+    printf("%f\n", f);
     return 0;
 }
