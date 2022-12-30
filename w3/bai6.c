@@ -1,15 +1,15 @@
 #include <stdio.h>
 
 int main() {
-    float r;
-    scanf("%f", &r);
+    double r, PI, M, S;
+    scanf("%lf", &r);
     if (r <= 0) {
         printf("ERROR.\n");
         return 0;
     }
-    float PI = 3.14159;
-    float M = 2 * PI * r;
-    float S = PI * r * r;
-    printf("%f\n%f\n", M, S);
+    PI = 3.14159;
+    M = 2 * PI * r;
+    S = PI * r * r;
+    printf("%lf\n%lf\n", M, S);
     return 0;
 }
