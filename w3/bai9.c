@@ -3,7 +3,7 @@
 
 int main() {
     double x, y, f = 0;
-    int i, j;
+    int i;
     scanf("%lf%lf", &x, &y);
     for (i = 0; i <= 6; i++) {
         f += pow(x, i) * pow(y, 6 - i);
