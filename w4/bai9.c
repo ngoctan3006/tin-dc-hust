@@ -10,8 +10,8 @@ int main() {
         return 0;
     }
     for (i = 1; i <= n; i++) {
-        s1 += sqrt(x + s1);
+        s1 = sqrt(x + s1);
     }
-    printf("%lf\n", s1);
+    printf("%.4lf\n", s1);
     return 0;
 }

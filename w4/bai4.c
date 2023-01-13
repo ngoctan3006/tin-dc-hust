@@ -4,7 +4,7 @@ int main() {
     int a, b, m;
     scanf("%d%d", &a, &b);
     if (a < 1 || b < 1) {
-        printf("ERROR.\n");
+        printf("ERROR\n");
         return 0;
     }
 

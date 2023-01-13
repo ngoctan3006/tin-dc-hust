@@ -4,7 +4,7 @@ int main() {
     int n, sum = 0;
     scanf("%d", &n);
     if (n >= 1000) {
-        printf("ERROR.\n");
+        printf("ERROR\n");
         return 0;
     }
     while (n != 0) {

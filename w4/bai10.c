@@ -12,6 +12,6 @@ int main() {
     for (i = 1; i <= n; i++) {
         s2 += pow(x, i) / i;
     }
-    printf("%lf\n", s2);
+    printf("%.4lf\n", s2);
     return 0;
 }
