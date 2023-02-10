@@ -3,7 +3,7 @@
 
 int main() {
     char s[1000], t[1000];
-    int i, j, n, len, count[26] = {0};
+    int i, len, count[26] = {0};
     fgets(s, 1000, stdin);
     fgets(t, 1000, stdin);
     strcat(s, t);
@@ -18,10 +18,9 @@ int main() {
             printf("%c", i + 'a');
         }
     }
-    printf("\n");
     for (i = 0; i < 26; i++) {
         if (count[i] > 0) {
-            printf("%d\n", count[i]);
+            printf("\n%d", count[i]);
         }
     }
     return 0;
