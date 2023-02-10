@@ -1,4 +1,3 @@
-// Viết chương trình đọc hai chuỗi S và T. Đếm số lần mỗi ký tự xuất hiện trong cả hai chuỗi.
 #include <stdio.h>
 #include <string.h>
 
