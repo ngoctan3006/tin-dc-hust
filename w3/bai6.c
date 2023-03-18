@@ -4,7 +4,7 @@ int main() {
     double r, PI, M, S;
     scanf("%lf", &r);
     if (r <= 0) {
-        printf("ERROR.\n");
+        printf("ERROR\n");
         return 0;
     }
     PI = 3.14159;

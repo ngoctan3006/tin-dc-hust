@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 int main() {
-    int n, arr[1000], i, soam = 0, soduong = 0, tongam = 0, tongduong = 0;
+    int n, arr[1000], i, soam = 0, soduong = 0;
+    double tongam = 0, tongduong = 0;
     scanf("%d", &n);
     if (n <= 0) {
         printf("Error\n");
@@ -20,12 +21,12 @@ int main() {
     if (soam == 0) {
         printf("Mang khong co so am ");
     } else {
-        printf("%f ", (float)tongam / soam);
+        printf("%lf ", tongam / soam);
     }
     if (soduong == 0) {
         printf("Mang khong co so duong");
     } else {
-        printf("%f", (float)tongduong);
+        printf("%lf", tongduong);
     }
     return 0;
 }
